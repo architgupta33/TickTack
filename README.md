@@ -1,1 +1,1 @@
-This is a simple game of Tick-Tack-Toe made using Javascript & CSS.
+This is a simple game of Stone, paper, scissors made using Javascript & CSS.
