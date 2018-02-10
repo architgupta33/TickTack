@@ -24,27 +24,26 @@
 <button onclick="scene2()"><img src="paper.jpg" height="200px" width="200px" id="paper"></button>
 <button onclick="scene3()"><img src="scissors.png" height="200px" width="200px" id="scissor"></button>
 </div>
-<p id="text"></p>
+<span id="text" style="background-color: green">hi</span>
 <script type="text/javascript">
 	
 var answers = [ "Rock", "Paper", "Scissor"];
 
-var computerPlay = function() {
-	var rand = answers[Math.floor(Math.random() * answers.length)];
+function computerPlay() {
+	let rand = answers[Math.floor(Math.random() * 3)];
 	return rand;
 }
 var text1;
 
-document.getElementByID("text").innerhtml = text1;
-
 function scene1() {
-	if (rand = Paper) {
+	if (rand === Paper) {
 		text1 = "You lose by paper"
-	} elseif (rand = Scissor) {
+	} elseif (rand === Scissor) {
 		text1 = "You won by scissors"
 	} else {
 		text1 = "It's a draw"
 	}
+	return text1;
 }
 function scene2() {
 	if (rand = "Paper") {
@@ -54,6 +53,7 @@ function scene2() {
 	} else {
 		text1 = "You won by rock"
 	}
+		return text1;
 }
 function scene3() {
 	if (rand = "Paper") {
@@ -63,7 +63,10 @@ function scene3() {
 	} else {
 		text1 = "You lost by rock"
 	}
+		return text1;
 }
+
+document.getElementByID('text').textcontent = text1;
 
 </script>
 </body>
